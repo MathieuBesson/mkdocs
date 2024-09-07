@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mkdocs_prod:
+    image: mkdocs
+    container_name: mkdocs-prod
+    volumes:
+      - ./:/docs
+      - /var/www/mkdocs:/build
+    stdin_open: true
+    tty: true
+    build: .
+    entrypoint: ["/sbin/tini", "--", "mkdocs"]
+    command: ["build", "--site-dir=/build"]  # Build statique pour la production

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mkdocs_dev:
+    image: mkdocs
+    container_name: mkdocs-dev
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./:/docs
+      - /var/www/mkdocs:/build
+    stdin_open: true
+    tty: true
+    build: .
+    entrypoint: ["/sbin/tini", "--", "mkdocs"]  # Utilise tini comme entrypoint pour gérer les processus proprement
+    command: ["serve", "--dev-addr=0.0.0.0:8000"]  # Serveur en mode dev

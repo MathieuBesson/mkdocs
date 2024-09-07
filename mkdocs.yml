@@ -1,0 +1,101 @@
+site_name: Docs - Mathieu BESSON
+site_url: https://doc.mathieu-besson.fr
+site_author: Mathieu BESSON
+site_description: Un wiki personnel regroupant mes notes, guides, et références, avec une documentation organisée pour retrouver facilement les informations importantes.
+repo_url: https://github.com/MathieuBesson/docs
+repo_name: MathieuBesson/docs
+edit_uri: edit/main/docs/
+docs_dir: "docs"
+
+extra_css:
+  - custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MathieuBesson
+    - icon: fontawesome/solid/link
+      link: https://mathieu-besson.fr
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/mathieubesson/
+
+theme:
+  name: material
+  logo: /static/mathieu-besson.png
+  icon: 
+    logo: fontawesome/brands/github
+  repo: fontawesome/brands/github
+  edit: material/pencil 
+  view: material/eye
+  font:
+    text: Roboto
+    code: Source Code Pro
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+      primary: indigo
+      accent: indigo
+
+  features:
+    - content.action.view
+    - content.action.edit
+    - content.code.copy
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - def_list
+  - footnotes
+  # Additional Markdown extensions...
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+plugins:
+  - search:
+      lang: fr
+  - badges
