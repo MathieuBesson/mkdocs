@@ -42,5 +42,4 @@ tmp
 .idea
 *~
 
-docs/*
-!docs/.gitkeep
+docs/
