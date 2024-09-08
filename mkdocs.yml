@@ -21,8 +21,8 @@ extra:
 
 theme:
   name: material
-  logo: /static/mathieu-besson.png
-  favicon: /static/mathieu-besson.png
+  logo: /static/mathieu-besson.svg
+  favicon: /static/mathieu-besson.svg
   icon: 
     logo: fontawesome/brands/github
   repo: fontawesome/brands/github
