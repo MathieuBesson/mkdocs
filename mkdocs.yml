@@ -4,7 +4,7 @@ site_author: Mathieu BESSON
 site_description: Un wiki personnel regroupant mes notes, guides, et références, avec une documentation organisée pour retrouver facilement les informations importantes.
 repo_url: https://github.com/MathieuBesson/docs
 repo_name: MathieuBesson/docs
-edit_uri: edit/main/docs/
+edit_uri: edit/main/
 docs_dir: "docs"
 
 extra_css:
