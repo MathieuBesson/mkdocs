@@ -5,7 +5,7 @@ FROM squidfunk/mkdocs-material:latest
 WORKDIR /docs
 
 # Installation des plugins
-RUN pip install mkdocs-badges
+RUN pip install mkdocs-badges pygments
 
 # CRéation du répertoire de build
 RUN mkdir /build
