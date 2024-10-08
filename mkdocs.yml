@@ -23,6 +23,7 @@ theme:
   name: material
   logo: /static/mathieu-besson.svg
   favicon: /static/mathieu-besson.svg
+  custom_dir: /docs/overrides
   icon: 
     logo: fontawesome/brands/github
   repo: fontawesome/brands/github
